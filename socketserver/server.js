@@ -71,7 +71,7 @@ io.on('connection', (socket) =>{
 });
 
 function dataUpdate(socket) {
-    socket.emit('dataupdate', Array.from({length: 8}, ()=> Math.floor(Math.random() * 2)));
+    socket.emit('dataupdate', Array.from({length: 8}, ()=> Math.floor(Math.random() * 40)));
 
     setTimeout(() =>{
         dataUpdate(socket);
