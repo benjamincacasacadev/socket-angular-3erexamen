@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
+import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 // import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 // import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 // import { TechnewsComponent } from './components/technews/technews.component';
@@ -12,6 +13,7 @@ import { ChartRandomComponent } from './components/chart-random/chart-random.com
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'random', component: ChartRandomComponent},
+  {path: 'charts', component: ChartGeneralComponent},
   // {path: 'tech', component: TechnewsComponent},
   // {path: 'sports', component: SportsnewsComponent},
   // {path: 'search', component: ListadoNoticiasComponent},

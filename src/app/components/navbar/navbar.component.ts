@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter, Output } from '@angular/core';
+import { Chart } from 'chart.js';
+import { SocketService } from 'src/app/socket.service';
+import * as io from 'socket.io-client';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +9,17 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  @Input() titulo: string;
+  @Output() parametrosSeleccionados = new EventEmitter<any>();
+  title = 'navbar';
+  chart;
+  socket: any;
 
-  constructor() {
-    this.titulo = '';
+  constructor( private srv: SocketService){
+    this.socket = io('http://localhost:3000');
+  }
+
+  reset(){
+    this.socket.emit('reset',0);
   }
 
 }

@@ -43,6 +43,8 @@ export class ChartRandomComponent implements OnInit {
         ]
       }
     });
+
+
   }
 
 }

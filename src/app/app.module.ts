@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
+import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ChartRandomComponent } from './components/chart-random/chart-random.com
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ChartRandomComponent
+    ChartRandomComponent,
+    ChartGeneralComponent
   ],
   imports: [
     BrowserModule,
