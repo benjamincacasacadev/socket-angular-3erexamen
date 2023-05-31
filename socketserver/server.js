@@ -8,7 +8,7 @@ app.get('/', (req, res)=> {
 });
 
 http.listen(3000, ()=>{
-    console.log('listning on port 3000');
+    console.log('listening on port 3000');
 });
 
 io.on('connection', (socket) =>{
