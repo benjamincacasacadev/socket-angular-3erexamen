@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ChatAppComponent } from './components/chat/chat-app/chat-app.component';
 import { ChatNamePopupComponent } from './components/chat/chat-name-popup/chat-name-popup.component';
+import { ChatInputComponent } from './components/chat/chat-input/chat-input.component';
 
 
 @NgModule({
@@ -25,13 +26,15 @@ import { ChatNamePopupComponent } from './components/chat/chat-name-popup/chat-n
     ProductosComponent,
     ContactoComponent,
     ChatAppComponent,
-    ChatNamePopupComponent
+    ChatNamePopupComponent,
+    ChatInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   // providers: [NewsapiservicesService],
   providers: [],
