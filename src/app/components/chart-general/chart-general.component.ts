@@ -6,7 +6,7 @@ import * as io from 'socket.io-client';
 @Component({
   selector: 'app-chart-general',
   templateUrl: './chart-general.component.html',
-  styleUrls: ['./chart-general.component.css']
+  styleUrls: ['./chart-general.component.css','../home/home.component.css']
 })
 export class ChartGeneralComponent implements OnInit {
   @Output() parametrosSeleccionados = new EventEmitter<any>();

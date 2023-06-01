@@ -5,7 +5,7 @@ import { SocketService } from 'src/app/socket.service';
 @Component({
   selector: 'app-chart-random',
   templateUrl: './chart-random.component.html',
-  styleUrls: ['./chart-random.component.css']
+  styleUrls: ['./chart-random.component.css','../home/home.component.css']
 })
 export class ChartRandomComponent implements OnInit {
 
@@ -27,15 +27,15 @@ export class ChartRandomComponent implements OnInit {
         responsive: true,
         title: {
           display: true,
-          text: 'Realtime Charts'
+          text: ''
         },
       },
       data: {
-        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'August'],
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago'],
         datasets: [
           {
             type: 'bar',
-            label: 'Test Chart',
+            label: 'Cantidad de ventas',
             // data: [10, 3, 6, 11, 38, 5, 6, 17],
             backgroundColor: '#3F3FBF',
             fill: false
