@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductosComponent } from './components/productos/productos.component';
     HomeComponent,
     ChartRandomComponent,
     ChartGeneralComponent,
-    ProductosComponent
+    ProductosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
