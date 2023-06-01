@@ -1,17 +1,12 @@
-<section class="main">
     <header>
-    <h4>Chat</h4>
+        <h4>Chatea con nosotros</h4>
     </header>
     <section *ngIf="!currentUser">
-        <label >1</label>
         <app-chat-name-popup (onUserNameChange)="handleName($event)"></app-chat-name-popup>
     </section>
     <section *ngIf="currentUser" class="chat-holder">
-        <article>
-            <app-chat-window [selectedUser]="selectedUser" [messages]="messages" (onMessage)="handleMessage($event)"></app-chat-window>
-        </article>
+        <app-chat-window [selectedUser]="selectedUser" [messages]="messages" (onMessage)="handleMessage($event)"></app-chat-window>
         <!-- <aside>
             <users-list [usersList]="usersList" (onUserSelect)="handleUserSelect($event)"></users-list>
         </aside> -->
     </section>
-</section>

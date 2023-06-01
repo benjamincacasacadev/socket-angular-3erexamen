@@ -12,7 +12,7 @@ export class ChatInputComponent {
   @Output() onMessage = new EventEmitter<string>();
   private _selectedUser: IUser;
   public inputForm: FormGroup;
-  nombreSeleccionado = "User 1";
+  nombreSeleccionado = "";
 
   @ViewChild("text", { static: true }) nameField: ElementRef;
   @Input() set selectedUser(selectedUser: IUser) {
@@ -27,8 +27,8 @@ export class ChatInputComponent {
   }
 
   @Input() config: IConfig = {
-    placeholder: "message",
-    buttonLabel: "send"
+    placeholder: "Escribir mensaje",
+    buttonLabel: "enviar"
   };
 
 
@@ -57,6 +57,7 @@ export class ChatInputComponent {
 
   public onSubmit() {
     var nombre = this.nombreSeleccionado;
+    this.nombreSeleccionado = '';
     console.log(nombre);
     this.onMessage.emit(nombre);
     // this.inputForm.reset();
