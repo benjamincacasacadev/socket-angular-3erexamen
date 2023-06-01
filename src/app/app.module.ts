@@ -11,6 +11,7 @@ import { ChartRandomComponent } from './components/chart-random/chart-random.com
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { ChatAppComponent } from './components/chat/chat-app/chat-app.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     ChartRandomComponent,
     ChartGeneralComponent,
     ProductosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ChatAppComponent
   ],
   imports: [
     BrowserModule,
