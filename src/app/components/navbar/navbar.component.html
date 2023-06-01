@@ -1,28 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-    <span class="navbar-brand" (click)="reset()">
-        <img src="https://amperonline.com/wp-content/uploads/2020/09/logo.svg" alt="">
-    </span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-                <!-- <li class="nav-item cursor-pointer" style="cursor: pointer;">
-                    <a class="nav-link active" onclick="reset()">Reporte de ventas
-                    </a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="" style="cursor: pointer;">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/random" style="cursor: pointer;">Tecnologia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/charts" style="cursor: pointer;">Chart</a>
-                </li>
-            </ul>
-        </div>
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container-fluid">
+<span class="navbar-brand" (click)="reset()">
+    <img src="https://amperonline.com/wp-content/uploads/2020/09/logo.svg" alt="">
+</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="" style="cursor: pointer;">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/random" style="cursor: pointer;">Tecnologia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/charts" style="cursor: pointer;">Chart</a>
+            </li>
+        </ul>
     </div>
+</div>
 </nav>
+-->
 
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top" style="background-color: #37517e;">
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo me-auto" (click)="reset()">
+            <img src="https://amperonline.com/wp-content/uploads/2020/09/logo.svg" alt="">
+        </h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" routerLink="">Inicio</a></li>
+                <li><a class="nav-link scrollto" routerLink="/random">Productos</a></li>
+                <li><a class="nav-link scrollto" routerLink="/random">Reporte anual</a></li>
+                <li><a class="nav-link scrollto" routerLink="/charts">Reporte de ventas</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</header><!-- End Header -->
