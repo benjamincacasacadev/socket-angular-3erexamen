@@ -12,6 +12,7 @@ import { ChartGeneralComponent } from './components/chart-general/chart-general.
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ChatAppComponent } from './components/chat/chat-app/chat-app.component';
+import { ChatNamePopupComponent } from './components/chat/chat-name-popup/chat-name-popup.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ChatAppComponent } from './components/chat/chat-app/chat-app.component'
     ChartGeneralComponent,
     ProductosComponent,
     ContactoComponent,
-    ChatAppComponent
+    ChatAppComponent,
+    ChatNamePopupComponent
   ],
   imports: [
     BrowserModule,
