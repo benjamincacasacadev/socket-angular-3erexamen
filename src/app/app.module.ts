@@ -14,6 +14,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { ChatAppComponent } from './components/chat/chat-app/chat-app.component';
 import { ChatNamePopupComponent } from './components/chat/chat-name-popup/chat-name-popup.component';
 import { ChatInputComponent } from './components/chat/chat-input/chat-input.component';
+import { ChatWindowComponent } from './components/chat/chat-window/chat-window.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ChatInputComponent } from './components/chat/chat-input/chat-input.comp
     ContactoComponent,
     ChatAppComponent,
     ChatNamePopupComponent,
-    ChatInputComponent
+    ChatInputComponent,
+    ChatWindowComponent
   ],
   imports: [
     BrowserModule,
