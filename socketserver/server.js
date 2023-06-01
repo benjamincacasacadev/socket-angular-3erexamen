@@ -20,7 +20,8 @@ const candidates = {
     "1":{votes: 0, label: 'Aires de precisión', color: randomRGB() },
     "2":{votes: 0, label: 'Baterias de litio', color: randomRGB() },
     "3":{votes: 0, label: 'Rectificadores', color: randomRGB() },
-    "4":{votes: 0, label: 'Reguladores de potencia', color: randomRGB() },
+    "4":{votes: 0, label: 'Reguladores de voltaje', color: randomRGB() },
+    "5":{votes: 0, label: 'Transformadores secos', color: randomRGB() },
 }
 
 function randomRGB() {

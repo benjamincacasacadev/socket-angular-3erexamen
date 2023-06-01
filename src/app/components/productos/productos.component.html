@@ -1,1 +1,141 @@
-<p>productos works!</p>
+
+
+<main id="" class="mt-5">
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+    <div class="container"  data-aos="fade-up">
+
+        <div class="section-title">
+        <h2>Productos</h2>
+        <p>Nos especializamos en ofrecerte los mejores equipos electrónicos para satisfacer todas tus necesidades. Si estás buscando UPS confiables para proteger tus dispositivos o aires acondicionados de calidad para mantener el ambiente perfecto, estás en el lugar indicado.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box featured">
+                    <h3>UPS (APC)</h3>
+                    <div class="col-12 img-responsive">
+                        <img src="https://santacruz.solutekla.com/photo/1/apc/ups/apc_smartups_1000va_lcd_120v/apc_smartups_1000va_lcd_120v_0001" style="height: 250px;">
+                    </div>
+                    <h4><sup>$</sup>200<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('0')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="box featured">
+                    <h3>Aires de precisión (STULZ)</h3>
+                    <div class="col-12 img-responsive">
+                        <img src="https://img.archiexpo.es/images_ae/photo-mg/150875-16611357.jpg" style="height: 250px;">
+                    </div>
+                    <h4><sup>$</sup>140<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('1')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="box featured">
+                    <h3>Baterias de litio (INJUSA)</h3>
+                    <div class="col-12 img-responsive">
+                        <img src="https://www.injusa.com/img/cms/bateria-de-litio-24v-9ah-injusa.jpg" style="height: 250px; ">
+                    </div>
+                    <h4><sup>$</sup>70<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('2')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="box featured">
+                    <h3>Rectificadores (EATON)</h3>
+                    <div class="col-12 img-responsive text-center">
+                        <img src="https://amperonline.com/wp-content/uploads/2020/11/APR24.png" style="height: 250px;">
+                    </div>
+                    <h4><sup>$</sup>350<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('3')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="box featured">
+                    <h3>Reguladores de voltaje </h3>
+                    <div class="col-12 img-responsive">
+                        <img src="https://amperonline.com/wp-content/uploads/2020/11/StacoAVR-removebg-preview.png" style="height: 250px; width:250px">
+                    </div>
+                    <h4><sup>$</sup>90<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('4')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="box featured">
+                    <h3>Transformadores secos</h3>
+                    <div class="col-12 img-responsive">
+                        <img src="https://amperonline.com/wp-content/uploads/2020/11/Transformador.png" style="height: 250px; width:250px">
+                    </div>
+                    <h4><sup>$</sup>480<span>por unidad</span></h4>
+                    <label for="name">Cantidad</label>
+                    <form (ngSubmit)="vote('5')">
+                        <input type="text" class="form-control"  placeholder="Ingrese la cantidad a comprar" [(ngModel)]="cantidadSeleccionado" name="cantidad">
+                        <div class="text-center mt-3">
+                            <button  class="buy-btn"><b>Comprar</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section><!-- End Pricing Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container footer-bottom clearfix">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Amper</span></strong>. 2023
+    </div>
+    <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">Software4Tech</a>
+    </div>
+    </div>
+</footer><!-- End Footer -->
+
+<!-- <div id="preloader"></div> -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

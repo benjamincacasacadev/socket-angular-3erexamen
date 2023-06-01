@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
+import { ProductosComponent } from './components/productos/productos.component';
 // import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 // import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 // import { TechnewsComponent } from './components/technews/technews.component';
@@ -12,6 +13,7 @@ import { ChartGeneralComponent } from './components/chart-general/chart-general.
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'products', component: ProductosComponent},
   {path: 'random', component: ChartRandomComponent},
   {path: 'charts', component: ChartGeneralComponent},
   // {path: 'tech', component: TechnewsComponent},
