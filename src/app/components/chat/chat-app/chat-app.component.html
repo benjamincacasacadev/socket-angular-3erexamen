@@ -1,0 +1,16 @@
+    <header>
+        <h4>Chatea con nosotros</h4>
+    </header>
+    <section *ngIf="!currentUser">
+        <app-chat-name-popup (onUserNameChange)="handleName($event)"></app-chat-name-popup>
+    </section>
+    <section *ngIf="currentUser" >
+        <article>
+            <app-chat-window [selectedUser]="selectedUser" [messages]="messages" (onMessage)="handleMessage($event)"></app-chat-window>
+        </article>
+        <aside>
+            <br><br>
+            <b style="font-size:17px">Usuarios conectados</b>
+            <app-users-list [usersList]="usersList" (onUserSelect)="handleUserSelect($event)"></app-users-list>
+        </aside>
+    </section>

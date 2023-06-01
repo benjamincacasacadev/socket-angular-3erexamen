@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,12 @@ import { ChartRandomComponent } from './components/chart-random/chart-random.com
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { ChatAppComponent } from './components/chat/chat-app/chat-app.component';
+import { ChatNamePopupComponent } from './components/chat/chat-name-popup/chat-name-popup.component';
+import { ChatInputComponent } from './components/chat/chat-input/chat-input.component';
+import { ChatWindowComponent } from './components/chat/chat-window/chat-window.component';
+import { MessageComponent } from './components/chat/message/message.component';
+import { UsersListComponent } from './components/chat/users-list/users-list.component';
 
 
 @NgModule({
@@ -21,13 +27,20 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     ChartRandomComponent,
     ChartGeneralComponent,
     ProductosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ChatAppComponent,
+    ChatNamePopupComponent,
+    ChatInputComponent,
+    ChatWindowComponent,
+    MessageComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   // providers: [NewsapiservicesService],
   providers: [],
